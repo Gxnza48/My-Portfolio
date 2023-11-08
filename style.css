@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    background: #000000;
+    filter: saturate(200%);
+    /* Aumenta la saturación al 200% */
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+    
+}
+
+a:hover {
+    color:white;
+}
+
+p {
+    cursor: default;
+}
+
+
+
+h1.header {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.lol {
+    margin-left: 10px;
+}
+
+h2 {
+    color: #85ffb4;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: default;
+}
+
+canvas {
+    height: 100vh;
+    z-index: -100000;
+    position: fixed;
+    top: 0px;
+}
+
+.mb {
+    margin-bottom: 3rem;
+}
+
+.logo {
+    font-family: 'Monoton', cursive;
+    color: #fff;
+    font-size: 10rem;
+    transition: 0.7s;
+}
+
+.logo:hover {
+    color: #85ffb4;
+}
+
+.links-list ul li {
+    list-style: none;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.links-list h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.links-list ul li span {
+    background-color: #ff0000;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 3px 6px;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    color: #fff;
+}
+
+.footer {
+    padding: 6rem 0 2rem;
+    
+}
+
+.footer>a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color:#85ffb4;
+}
+
+.footer>a>span {
+    margin: 0 2px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.info {
+    color: white;
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px; /* Establece un ancho máximo para las tarjetas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra a las tarjetas */
+    transition: transform 0.3s; /* Agrega una transición al hacer hover */
+    flex: 1; /* Distribuye el espacio disponible entre las tarjetas de manera uniforme */
+}
+
+.header-p {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.7rem;
+    padding: 1rem;
+    color:#85ffb4;
+    border: 2px solid white;
+    border-radius: 45px 0px 45px 0px;
+    box-shadow: inset -2px -2px white;
+}
+
+.contact-button {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #85ffb4;
+    color: #ffffff; /* Cambia el color del texto si lo deseas */
+}
+
+
+.info:hover {
+    transform: scale(1.05); /* Escala la tarjeta ligeramente al hacer hover */
+}
+
+.typing-animation {
+    display: inline-block;
+    width: 0; /* Inicialmente sin ancho */
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    overflow: hidden; /* Oculta el texto que excede el ancho del elemento */
+    animation: typing 5s steps(40, end) infinite; /* Aplica la animación llamada "typing" */
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Comienza con un ancho de 0 */
+    }
+    to {
+        width: 100%; /* Termina con el ancho completo del texto */
+    }
+}
+
+h1 {
+    cursor: default;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+h1:hover {
+    color: #ffffff;
+}
+
+.h2-title {
+    cursor: default;
+}
+
+.h2-title:hover {
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.Go-up {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Estilos existentes para el botón "Go up" antes de la media query */
+.Go-up {
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Go-up>span {
+    color: white;
+    font-size: 2.5em;
+    transition: all linear 100ms;
+    cursor: pointer;
+}
+
+.Go-up>span:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+/* Nuevos estilos para el botón "Go up" dentro de la media query */
+@media screen and (max-width: 768px) {
+    .Go-up {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        bottom: 20px;
+        /* Agregar un espacio de 20px desde la parte inferior de la ventana */
+        left: 0;
+        transform: none;
+    }
+
+    .footer>a {
+        justify-content: center;
+    }
+
+}
+
+.image-section {
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.image-section img {
+    max-width: 100%; /* Hace que la imagen sea responsiva y se ajuste al ancho del contenedor */
+    width: 80%; /* Define el tamaño de la imagen al 80% del ancho del contenedor (puedes ajustar este valor según tus preferencias) */
+    display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 50px 0px 50px 0px;
+    box-shadow: 3px 3px #ffffff
+}
+
+@media screen and (max-width: 768px) {
+    .info-container {
+        flex-direction: column; /* Cambia la dirección de la disposición a columnas */
+        align-items: center; /* Centra verticalmente los elementos */
+        text-align: center; /* Centra el texto */
+    }
+
+    .info {
+        max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+        margin: 10px 0; /* Agrega espacio entre las tarjetas */
+    }
+}

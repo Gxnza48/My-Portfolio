@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pink-text {
+            color: #85ffb4;
+        }
+    </style>
+    <title>Portfolio | Gxnza48</title>
+</head>
+<body>
+    <div id="background">
+        <div class="container">
+            <div class="row mb">
+                <div class="column">
+                    <a href="https://www.instagram.com/gonza_bonadeo/?hl=es" class="logo" target="_blank" rel="noopener noreferrer">G</a>
+                    <h1 class="header">Gonzalo Bonadeo</h1>
+                    <h2 class="h2-title">
+                        <a>Hi, I am a : <span id="typing-animation" class="pink-text"></span></a>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container info-container">
+                    <div class="info">
+                        <h2 class="title">Bio</h2>
+                        <p>
+                            I am a 16 years Frontend/Luac Developer/Programmer From Argentina, Rosario.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2 class="title">My Jobs</h2>
+                        <p>
+                            A GTA:SA/MTA:SA server I created from the ground up, with scripts entirely made by me and fully functional.
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h2 class="title">Hobbies</h2>
+                        <p>
+                            Coding with chill Music, Chilling Out with My Friends, Play Ping Pong and Video Games.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h1 class="header-p">Projects</h1>
+            </div>
+            <div class="row">
+                <div class="container info-container">
+                    <div class="info">
+                        <div class="image-section">
+                            <img src="https://i.ibb.co/PhFNdzM/calculadora.png" alt="Project 1">
+                        </div>
+                        <h2 class="title">Web-Calculator</h2>
+                        <p>Simple Responsive Web-Calculator</p>
+                    </div>
+                    <div class="info">
+                        <div class="image-section">
+                            <img src="https://i.ibb.co/Gsm9YdD/ashe.png" alt="Project 2">
+                        </div>
+                        <h2 class="title">E-Commerce</h2>
+                        <p>Complex E-Commerce page, with JS, CSS & HTML</p>
+                    </div>
+                    <div class="info">
+                        <div class="image-section">
+                            <img src="https://i.ibb.co/CnWZFPZ/login-form.png" alt="Project 3">
+                        </div>
+                        <h2 class="title">Login Form</h2>
+                        <p>Simple Login Form with HTML, CSS & JS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h1 class="header-p">Hire Me</h1>
+            </div>
+            <div class="row">
+                <div class="container info-container">
+                    <div class="info">
+                        <h2 class="title">Let's Work Together</h2>
+                        <p>If you're interested in working with me, feel free to get in touch. I'm open to new opportunities and projects.</p>
+                        <a href="https://www.instagram.com/gonza_bonadeo/?hl=es" class="contact-button">Contact Me</a>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Go-up ft-ul">
+                <span class="material-icons" id="go-up"> arrow_circle_up </span>
+            </div>
+
+            <div class="footer">
+                <a href="https://github.com/Gxnza48" target="_blank">
+                    <span>Developed By Gxnza48</span>
+                    <span class="material-icons"> code </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+        const phrases = ["Frontend", "Developer", "Luac Scripter", "UX/UI Designer"];
+        const typingAnimation = document.getElementById("typing-animation");
+
+        let index = 0;
+
+        function typeAndDelete() {
+            let phrase = phrases[index];
+            let speed = 100;
+            let i = 0;
+
+            function type() {
+                if (i < phrase.length) {
+                    typingAnimation.textContent += phrase.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                } else {
+                    setTimeout(deleteText, 1000);
+                }
+            }
+
+            function deleteText() {
+                if (i >= 0) {
+                    typingAnimation.textContent = phrase.substring(0, i);
+                    i--;
+                    setTimeout(deleteText, speed / 2);
+                } else {
+                    index = (index + 1) % phrases.length;
+                    setTimeout(typeAndDelete, 500);
+                }
+            }
+
+            type();
+        }
+
+        typeAndDelete();
+    </script>
+</body>
+</html>
