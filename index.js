@@ -40,7 +40,7 @@ particlesJS("background", {
       line_linked: {
           enable: true,
           distance: 150, // Maximum distance between linked particles
-          color: "#85ffb4",
+          color: "#3273a8",
           opacity: 0.4,
           width: 1,
       },

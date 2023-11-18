@@ -6,9 +6,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+          
     <style>
         .pink-text {
-            color: #85ffb4;
+            color: #3273a8;
         }
     </style>
     <title>Portfolio | Gxnza48</title>
@@ -55,27 +58,53 @@
                 <div class="container info-container">
                     <div class="info">
                         <div class="image-section">
-                            <img src="https://i.ibb.co/PhFNdzM/calculadora.png" alt="Project 1">
+                            <img src="https://i.ibb.co/vD5n6QC/Screenshot-2023-11-18-135702.png" alt="Project 1" onclick="openModal('https://i.ibb.co/vD5n6QC/Screenshot-2023-11-18-135702.png')">
                         </div>
-                        <h2 class="title">Web-Calculator</h2>
-                        <p>Simple Responsive Web-Calculator</p>
+                        <h2 class="title">Neat HUB</h2>
+                        <a class="links" href="https://neat-hub-web-developing.onrender.com/" target="_blank" rel="noopener noreferrer">Responsive design, Landing page</a>
                     </div>
                     <div class="info">
                         <div class="image-section">
-                            <img src="https://i.ibb.co/Gsm9YdD/ashe.png" alt="Project 2">
+                            <img src="https://i.ibb.co/gd394qW/Captura-de-pantalla-2023-11-14-170343.png" alt="Project 2" onclick="openModal('https://i.ibb.co/gd394qW/Captura-de-pantalla-2023-11-14-170343.png')">
                         </div>
                         <h2 class="title">E-Commerce</h2>
-                        <p>Complex E-Commerce page, with JS, CSS & HTML</p>
+                        <!-- Agrega el enlace aquí -->
+                        <a class="links" href="https://br-shop.onrender.com" target="_blank" rel="noopener noreferrer">Complex Responsive E-Commerce Desing with HTML CSS & JS</a>
                     </div>
                     <div class="info">
                         <div class="image-section">
-                            <img src="https://i.ibb.co/CnWZFPZ/login-form.png" alt="Project 3">
+                            <img src="https://i.ibb.co/y8BRjQR/Screenshot-2023-11-18-173105.png" alt="Project 3" onclick="openModal('https://i.ibb.co/y8BRjQR/Screenshot-2023-11-18-173105.png')">
                         </div>
-                        <h2 class="title">Login Form</h2>
-                        <p>Simple Login Form with HTML, CSS & JS</p>
+                        <h2 class="title">FLYTΞ</h2>
+                        <!-- Agrega el enlace aquí -->
+                        <a class="links" href="https://flyte-en.onrender.com" target="_blank" rel="noopener noreferrer">My first Responsive/desing and paralax effect landig page</a>
                     </div>
                 </div>
             </div>
+            
+            <div class="row">
+                <h1 class="header-p">Languages</h1>
+            </div>
+            
+            <div class="row">
+                <div class="container info-container">
+                    <div class="icons">
+                        <i class="devicon-html5-plain colored" data-language="HTML"></i>
+                        <i class="devicon-css3-plain colored" data-language="CSS"></i>
+                        <i class="devicon-javascript-plain colored" data-language="JavaScript"></i>
+                        <i class="devicon-lua-plain-wordmark colored" data-language="Lua"></i>
+                        <i class="devicon-react-original colored" data-language="React"></i>
+                        <i class="devicon-git-plain colored" data-language="Git"></i>
+                        <i class="devicon-sass-original colored" data-language="Sass"></i>
+                        <i class="devicon-nodejs-plain-wordmark colored" data-language="Node.js"></i>
+                        <i class="devicon-php-plain colored" data-language="PHP"></i>
+                        <!-- Agrega más iconos según los lenguajes que desees mostrar -->
+                    </div>
+                </div>
+            </div>
+            
+            
+
 
             <div class="row">
                 <h1 class="header-p">Hire Me</h1>
@@ -86,9 +115,11 @@
                         <h2 class="title">Let's Work Together</h2>
                         <p>If you're interested in working with me, feel free to get in touch. I'm open to new opportunities and projects.</p>
                         <a href="https://www.instagram.com/gonza_bonadeo/?hl=es" class="contact-button">Contact Me</a>
-
                     </div>
                 </div>
+            </div>
+            <div class="dev">
+
             </div>
             
             <div class="Go-up ft-ul">
@@ -98,12 +129,17 @@
             <div class="footer">
                 <a href="https://github.com/Gxnza48" target="_blank">
                     <span>Developed By Gxnza48</span>
-                    <span class="material-icons"> code </span>
+                    <i class="devicon-github-original"></i>
                 </a>
             </div>
         </div>
     </div>
 
+    <!-- Agrega un modal para mostrar la imagen en tamaño grande -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="index.js"></script>
@@ -143,6 +179,9 @@
         }
 
         typeAndDelete();
+        
+
+        
     </script>
 </body>
 </html>
