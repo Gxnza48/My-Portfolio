@@ -19,7 +19,7 @@
     </style>
     <title>Portfolio | Gxnza48</title>
 </head>
-<body>
+<body onclick="PlayAudio()">
     <div id="background">
         <div class="container">
             <div class="row mb">
@@ -126,9 +126,32 @@
                     </div>
                 </div>
             </div>
-            <div class="dev">
+            <!-- Agrega esta sección a tu cuerpo (body) -->
+<!-- Agrega esta sección a tu cuerpo (body) -->
+<div class="row">
+    <h1 class="header-p">Certificates</h1>
+</div>
+<div class="row certificate-section">
+    <div class="certificate-item">
+        <img src="https://i.ibb.co/qJ5gW5h/doc-js.jpg" alt="Certificate 1">
+        <!-- Puedes agregar más información o enlaces aquí -->
+    </div>
+    <div class="certificate-item">
+        <img src="https://i.ibb.co/8Y6t2vx/doc-html.jpg" alt="Certificate 2">
+        <!-- Puedes agregar más información o enlaces aquí -->
+    </div>
+    <div class="certificate-item">
+        <img src="https://i.ibb.co/4KJr9Z4/doc-boostrap.jpg" alt="Certificate 3">
+        <!-- Puedes agregar más información o enlaces aquí -->
+    </div>
+    <div class="certificate-item">
+        <img src="https://i.ibb.co/GkJsGLg/doc-css.jpg" alt="Certificate 4">
+        <!-- Puedes agregar más información o enlaces aquí -->
+    </div>
+    <!-- Agrega más items de certificados según sea necesario -->
+</div>
 
-            </div>
+
             
             <div class="Go-up ft-ul">
                 <span class="material-icons" id="go-up"> arrow_circle_up </span>
@@ -142,6 +165,15 @@
             </div>
         </div>
     </div>
+    <br><br>
+    <audio id="audio1">
+        <source src="audio/tema.mp3"> type="audio/mpeg">
+    </audio>
+    <script>
+        function PlayAudio() {
+            document.getElementById("audio1").play();
+        }
+    </script>
 
     <!-- Agrega un modal para mostrar la imagen en tamaño grande -->
     <div id="imageModal" class="modal">
@@ -191,5 +223,7 @@
 
         
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 </body>
 </html>

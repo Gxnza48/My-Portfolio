@@ -15,6 +15,13 @@ body {
     /* Aumenta la saturación al 200% */
 }
 
+#background {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 a {
     color: #ffffff;
     text-decoration: none;
@@ -87,7 +94,7 @@ canvas {
     border-radius: 10px;
     padding: 3px 6px;
     font-weight: bold;
-    margin-left: 0.5rem;
+    
     color: #3273a8; /* Cambio de color aquí */
 }
 
@@ -124,6 +131,7 @@ canvas {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra a las tarjetas */
     transition: transform 0.3s; /* Agrega una transición al hacer hover */
     flex: 1; /* Distribuye el espacio disponible entre las tarjetas de manera uniforme */
+    margin-left: 35px;
 }
 
 .header-p {
@@ -172,6 +180,7 @@ canvas {
     grid-template-columns: repeat(3, 1fr); /* Tres columnas en dispositivos más grandes */
     gap: 20px; /* Espacio entre los iconos */
     justify-content: space-around; /* Distribuye uniformemente las columnas */
+    margin-left: 35px;
 }
 
 .icons i {
@@ -190,6 +199,7 @@ canvas {
 @media screen and (max-width: 768px) {
     .icons {
         grid-template-columns: repeat(3); /* Una columna en dispositivos más pequeños */
+        margin-right: 35px;
     }
 
     .icons i {
@@ -282,4 +292,30 @@ h1 {
 
 .devicon-github-original {
     padding: 10px;
+}
+
+
+
+
+/* Agrega este estilo a tu CSS */
+.certificate-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.certificate-item {
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
 }

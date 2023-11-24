@@ -122,3 +122,10 @@ document.addEventListener('DOMContentLoaded', function() {
       requestAnimationFrame(animateScroll);
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+        duration: 800, // Duración de la animación en milisegundos
+        once: true, // La animación solo se ejecutará una vez
+    });
+});
