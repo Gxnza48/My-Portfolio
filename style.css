@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap');
 
 * {
     padding: 0;
@@ -12,7 +11,6 @@ body {
     height: 100%;
     background: #000000;
     filter: saturate(200%);
-    /* Aumenta la saturación al 200% */
 }
 
 #background {
@@ -29,7 +27,7 @@ a {
 }
 
 a:hover {
-    color:white;
+    color: white;
 }
 
 p {
@@ -47,7 +45,7 @@ h1.header {
 }
 
 h2 {
-    color: #3273a8; /* Cambio de color aquí */
+    color: #db0000;
     font-size: 2.5rem;
     font-weight: bold;
     cursor: default;
@@ -69,11 +67,11 @@ canvas {
     color: #fff;
     font-size: 10rem;
     transition: 0.7s;
-    font-weight: bold ;
+    font-weight: bold;
 }
 
 .logo:hover {
-    color: #3273a8; /* Cambio de color aquí */
+    color: #db0000;
 }
 
 .links-list ul li {
@@ -94,8 +92,7 @@ canvas {
     border-radius: 10px;
     padding: 3px 6px;
     font-weight: bold;
-    
-    color: #3273a8; /* Cambio de color aquí */
+    color: #db0000;
 }
 
 .footer {
@@ -106,7 +103,7 @@ canvas {
     display: flex;
     align-items: center;
     width: 100%;
-    color: #3273a8; /* Cambio de color aquí */
+    color: #db0000;
 }
 
 .footer>a>span {
@@ -115,9 +112,9 @@ canvas {
 
 .info-container {
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    gap: 20px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .info {
@@ -127,19 +124,41 @@ canvas {
     border: 1px solid white;
     border-radius: 10px;
     text-align: center;
-    max-width: 300px; /* Establece un ancho máximo para las tarjetas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra a las tarjetas */
-    transition: transform 0.3s; /* Agrega una transición al hacer hover */
-    flex: 1; /* Distribuye el espacio disponible entre las tarjetas de manera uniforme */
-    margin-left: 35px;
+    width: 300px; /* Asegura que todas las tarjetas tengan el mismo ancho */
+    height: 300px; /* Asegura que todas las tarjetas tengan la misma altura */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
+
+.info h2 {
+    margin-bottom: 10px; /* Ajusta el margen inferior para reducir la separación */
+}
+
+.info p {
+    margin-top: 0; /* Elimina cualquier margen superior en los párrafos */
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.info:hover {
+    transform: scale(1.05);
+}
+
 
 .header-p {
     text-align: center;
     font-family: 'Tektur', sans-serif;
     font-size: 2.7rem;
     padding: 1rem;
-    color: #3273a8; /* Cambio de color aquí */
+    color: #db0000;
     border: 2px solid white;
     border-radius: 25px;
     width: 100%;
@@ -148,45 +167,43 @@ canvas {
 .contact-button {
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-color: #3273a8; /* Cambio de color aquí */
-    color: #ffffff; /* Cambia el color del texto si lo deseas */
+    text-decoration-color: #db0000;
+    color: #ffffff;
 }
 
 .info:hover {
-    transform: scale(1.05); /* Escala la tarjeta ligeramente al hacer hover */
+    transform: scale(1.05);
 }
 
 .typing-animation {
     display: inline-block;
-    width: 0; /* Inicialmente sin ancho */
-    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
-    overflow: hidden; /* Oculta el texto que excede el ancho del elemento */
-    animation: typing 5s steps(40, end) infinite; /* Aplica la animación llamada "typing" */
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(40, end) infinite;
 }
 
 @keyframes typing {
     from {
-        width: 0; /* Comienza con un ancho de 0 */
+        width: 0;
     }
     to {
-        width: 100%; /* Termina con el ancho completo del texto */
+        width: 100%;
     }
 }
 
-/* Ajusta estas reglas de estilo para los iconos */
-
 .icons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas en dispositivos más grandes */
-    gap: 20px; /* Espacio entre los iconos */
-    justify-content: space-around; /* Distribuye uniformemente las columnas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-around;
     margin-left: 35px;
 }
 
 .icons i {
     font-size: 4rem;
     color: white;
-    margin: 10px; /* Agrega margen entre los iconos */
+    margin: 10px;
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -195,10 +212,9 @@ canvas {
     transform: scale(1.5);
 }
 
-/* Estilo para dispositivos pequeños */
 @media screen and (max-width: 768px) {
     .icons {
-        grid-template-columns: repeat(3); /* Una columna en dispositivos más pequeños */
+        grid-template-columns: repeat(3);
         margin-right: 35px;
     }
 
@@ -212,7 +228,7 @@ canvas {
         width: 100%;
         justify-content: center;
         position: relative;
-        bottom: 20px; /* Agregar un espacio de 20px desde la parte inferior de la ventana */
+        bottom: 20px;
         left: 0;
         transform: none;
     }
@@ -227,7 +243,6 @@ h1 {
     margin-top: 20px;
     margin-left: 10px;
 }
-
 
 .h2-title {
     cursor: default;
@@ -257,47 +272,35 @@ h1 {
 }
 
 .image-section {
-    text-align: center; /* Centra la imagen horizontalmente */
+    text-align: center;
+    flex: 1; /* Hace que la sección de la imagen ocupe el espacio disponible */
 }
 
 .image-section img {
-    max-width: 100%; /* Hace que la imagen sea responsiva y se ajuste al ancho del contenedor */
-    width: 80%; /* Define el tamaño de la imagen al 80% del ancho del contenedor (puedes ajustar este valor según tus preferencias) */
-    display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */
-    margin: auto; /* Centra la imagen horizontalmente */
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 200px; /* Limita la altura máxima de las imágenes */
+    object-fit: cover; /* Hace que las imágenes se ajusten al contenedor sin distorsionarse */
     margin-bottom: 20px;
-    margin-top: 11px;
-    border-radius: 25px;
-    box-shadow: 3px 3px #ffffff;
 }
 
 @media screen and (max-width: 768px) {
-    .info-container {
-        flex-direction: column; /* Cambia la dirección de la disposición a columnas */
-        align-items: center; /* Centra verticalmente los elementos */
-        text-align: center; /* Centra el texto */
-    }
-
-    .info {
-        max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
-        margin: 10px 0; /* Agrega espacio entre las tarjetas */
+    .image-section img {
+        width: 100%;
+        max-width: none;
     }
 }
 
 .links {
     color: white;
-    text-decoration: underline #3273a8; /* Subrayado verde sin hover */
+    text-decoration: underline #db0000;
 }
-
 
 .devicon-github-original {
     padding: 10px;
 }
 
-
-
-
-/* Agrega este estilo a tu CSS */
 .certificate-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -317,5 +320,10 @@ h1 {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+    border-radius: 10px 10px 0 0;
+}
+
+.pfp {
+    width: 200px;
+    height: 200px;
 }
