@@ -3,238 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link
-    rel="icon"
-    href="https://cdn-icons-png.freepik.com/512/5595/5595272.png"
-  />
-          
-    <style>
-        .pink-text {
-            color: #db0000;
-        }
-    </style>
-    <title>Portfolio | Gxnza48</title>
+    <title>Gonzalo Bonadeo | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body onclick="PlayAudio()">
-    <div id="background">
-        <div class="container">
-            <div class="row mb">
-                <div class="column">
-                    <div style="display: flex; align-items: center;">
-                    
-                    <img class="pfp" src="https://openclipart.org/image/800px/261984">
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <header>
+            <img src="https://avatars.githubusercontent.com/u/143771068?v=4" alt="Gonzalo Bonadeo" class="profile-img">
+            <h1>Gonzalo Bonadeo</h1>
+            <p id="typing-animation"></p>
+        </header>
+
+        <section class="glass-card about">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a 17-year-old Frontend/Lua Developer/Programmer from Rosario, Argentina. Passionate about creating engaging web experiences and game development.</p>
+        </section>
+
+        <section class="glass-card projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://i.ibb.co/vD5n6QC/Screenshot-2023-11-18-135702.png" alt="Neat HUB">
+                    <h3>Neat HUB</h3>
+                    <p>Responsive design, Landing page</p>
+                    <a href="https://neat-hub-web-developing.onrender.com/" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
-                    <h1 class="header">Gonzalo Bonadeo</h1>
-                    
-
-
-                            <h2 class="h2-title">
-                    <a>Hi, I am a : <span id="typing-animation" class="pink-text"></span></a>
-                    
-    </h2>
-</div>
-<!-- ... (resto de tu código) ... -->
-
-            </div>
-            <div class="row">
-                <div class="container info-container">
-                    <div class="info">
-                        <h2 class="title">Bio</h2>
-                        <p>
-                            I am a 16 years Frontend/Luac Developer/Programmer From Argentina, Rosario.
-                        </p>
-                    </div>
-                    <div class="info">
-                        <h2 class="title">My Jobs</h2>
-                        <p>
-                            A GTA:SA/MTA:SA server I created from the ground up, with scripts entirely made by me and fully functional.
-                        </p>
-                    </div>
-                    <div class="info">
-                        <h2 class="title">Hobbies</h2>
-                        <p>
-                            Coding with chill Music, Chilling Out with My Friends, Play Ping Pong and Video Games.
-                        </p>
-                    </div>
+                <div class="project-card">
+                    <img src="https://i.ibb.co/ZHJqRk1/Screenshot-2024-01-17-120741.png" alt="ASTRA-Type">
+                    <h3>ASTRA-Type</h3>
+                    <p>A computer, words per minute typing game. Made with JS</p>
+                    <a href="https://astra-type-deverce.onrender.com/" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
-            </div>
-
-            <div class="row">
-                <h1 class="header-p">Projects</h1>
-            </div>
-            <div class="row">
-                <div class="container info-container">
-                    <div class="info">
-                        <div class="image-section">
-                            <img src="https://i.ibb.co/vD5n6QC/Screenshot-2023-11-18-135702.png" alt="Project 1" onclick="openModal('https://i.ibb.co/vD5n6QC/Screenshot-2023-11-18-135702.png')">
-                        </div>
-                        <h2 class="title">Neat HUB</h2>
-                        <a class="links" href="https://neat-hub-web-developing.onrender.com/" target="_blank" rel="noopener noreferrer">Responsive design, Landing page</a>
-                    </div>
-                    <div class="info">
-                        <div class="image-section">
-                            <img src="https://i.ibb.co/ZHJqRk1/Screenshot-2024-01-17-120741.png" alt="Project 1" onclick="openModal('https://i.ibb.co/vD5n6QC/Screenshot-2023-11-18-135702.png')">
-                        </div>
-                        <h2 class="title">ASTRA-Type</h2>
-                        <a class="links" href="https://astra-type-deverce.onrender.com/" target="_blank" rel="noopener noreferrer">A computer, words per minute typing game. Made with js</a>
-                    </div>
-                    <div class="info">
-                        <div class="image-section">
-                            <img src="https://i.ibb.co/gd394qW/Captura-de-pantalla-2023-11-14-170343.png" alt="Project 2" onclick="openModal('https://i.ibb.co/gd394qW/Captura-de-pantalla-2023-11-14-170343.png')">
-                        </div>
-                        <h2 class="title">E-Commerce</h2>
-                        <!-- Agrega el enlace aquí -->
-                        <a class="links" href="https://br-shop.onrender.com" target="_blank" rel="noopener noreferrer">Complex Responsive E-Commerce Desing with HTML CSS & JS</a>
-                    </div>
-                    <div class="info">
-                        <div class="image-section">
-                            <img src="https://i.ibb.co/y8BRjQR/Screenshot-2023-11-18-173105.png" alt="Project 3" onclick="openModal('https://i.ibb.co/y8BRjQR/Screenshot-2023-11-18-173105.png')">
-                        </div>
-                        <h2 class="title">FLYTΞ</h2>
-                        <!-- Agrega el enlace aquí -->
-                        <a class="links" href="https://flyte-en.onrender.com" target="_blank" rel="noopener noreferrer">My first Responsive/desing and paralax effect landig page</a>
-                    </div>
+                <div class="project-card">
+                    <img src="https://i.ibb.co/gd394qW/Captura-de-pantalla-2023-11-14-170343.png" alt="E-Commerce">
+                    <h3>E-Commerce</h3>
+                    <p>Complex Responsive E-Commerce Design with HTML, CSS & JS</p>
+                    <a href="https://br-shop.onrender.com" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://i.ibb.co/WxQzxYz/image.png" alt="E-Commerce">
+                    <h3>DARKLAND</h3>
+                    <p>Modern darken website design with theme switch feature</p>
+                    <a href="https://br-shop.onrender.com" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://i.ibb.co/mNcj0Q2/image.png" alt="E-Commerce">
+                    <h3>Mi/Ui</h3>
+                    <p>Modern Ux/Ui GlassMorphic design website with login and sign up feauture</p>
+                    <a href="https://glassmorphic-example.onrender.com/" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
             </div>
-            
-            <div class="row">
-                <h1 class="header-p">Languages</h1>
-            </div>
-            
-            <div class="row">
-                <div class="container info-container">
-                    <div class="icons">
-                        <i class="devicon-html5-plain colored" data-language="HTML"></i>
-                        <i class="devicon-css3-plain colored" data-language="CSS"></i>
-                        <i class="devicon-javascript-plain colored" data-language="JavaScript"></i>
-                        <i class="devicon-lua-plain-wordmark colored" data-language="Lua"></i>
-                        <i class="devicon-react-original colored" data-language="React"></i>
-                        <i class="devicon-git-plain colored" data-language="Git"></i>
-                        <i class="devicon-sass-original colored" data-language="Sass"></i>
-                        <i class="devicon-nodejs-plain-wordmark colored" data-language="Node.js"></i>
-                        <i class="devicon-php-plain colored" data-language="PHP"></i>
-                        <!-- Agrega más iconos según los lenguajes que desees mostrar -->
-                    </div>
+        </section>
+
+        <section class="glass-card skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="languages-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5 language-icon"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt language-icon"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js language-icon"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react language-icon"></i>
+                    <p>React</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-node-js language-icon"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-git-alt language-icon"></i>
+                    <p>Git</p>
                 </div>
             </div>
-            
-            
+        </section>
 
+        <section class="glass-card hire-me">
+            <h2 class="section-title">Hire Me</h2>
+            <p>If you're interested in working with me, feel free to get in touch. I'm open to new opportunities and projects.</p>
+            <p>Click the button bellow or just send me a mail: <span>gonzalobonadeo07@gmail.com</span></p>
+            <a href="https://www.instagram.com/gonza_bonadeo/?hl=es" class="contact-button">Contact Me</a>
+        </section>
+    </div>
 
-            <div class="row">
-                <h1 class="header-p">Hire Me</h1>
-            </div>
-            <div class="row">
-                <div class="container info-container">
-                    <div class="info">
-                        <h2 class="title">Let's Work Together</h2>
-                        <p>If you're interested in working with me, feel free to get in touch. I'm open to new opportunities and projects.</p>
-                        <a href="https://www.instagram.com/gonza_bonadeo/?hl=es" class="contact-button">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Agrega esta sección a tu cuerpo (body) -->
-<!-- Agrega esta sección a tu cuerpo (body) -->
-<div class="row">
-    <h1 class="header-p">Certificates</h1>
-</div>
-<div class="row certificate-section">
-    <div class="certificate-item">
-        <img src="https://i.ibb.co/qJ5gW5h/doc-js.jpg" alt="Certificate 1">
-        <!-- Puedes agregar más información o enlaces aquí -->
-    </div>
-    <div class="certificate-item">
-        <img src="https://i.ibb.co/8Y6t2vx/doc-html.jpg" alt="Certificate 2">
-        <!-- Puedes agregar más información o enlaces aquí -->
-    </div>
-    <div class="certificate-item">
-        <img src="https://i.ibb.co/4KJr9Z4/doc-boostrap.jpg" alt="Certificate 3">
-        <!-- Puedes agregar más información o enlaces aquí -->
-    </div>
-    <div class="certificate-item">
-        <img src="https://i.ibb.co/GkJsGLg/doc-css.jpg" alt="Certificate 4">
-        <!-- Puedes agregar más información o enlaces aquí -->
-    </div>
-    <!-- Agrega más items de certificados según sea necesario -->
-</div>
+    <footer>
+        <p>Developed by Gxnza48 | <a href="https://github.com/Gxnza48" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></p>
+    </footer>
 
-
-            
-            <div class="Go-up ft-ul">
-                <span class="material-icons" id="go-up"> arrow_circle_up </span>
-            </div>
-
-            <div class="footer">
-                <a href="https://github.com/Gxnza48" target="_blank">
-                    <span>Developed By Gxnza48</span>
-                    <i class="devicon-github-original"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <audio id="audio1">
-        <source src="audio/tema.mp3"> type="audio/mpeg">
-    </audio>
-    <script>
-        function PlayAudio() {
-            document.getElementById("audio1").play();
-        }
-    </script>
-
-    <!-- Agrega un modal para mostrar la imagen en tamaño grande -->
-    <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
+    <button id="go-top" class="go-top-btn"><i class="fas fa-arrow-up"></i></button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="index.js"></script>
-    <script>
-        const phrases = ["Frontend", "Developer", "Luac Scripter", "UX/UI Designer"];
-        const typingAnimation = document.getElementById("typing-animation");
-
-        let index = 0;
-
-        function typeAndDelete() {
-            let phrase = phrases[index];
-            let speed = 100;
-            let i = 0;
-
-            function type() {
-                if (i < phrase.length) {
-                    typingAnimation.textContent += phrase.charAt(i);
-                    i++;
-                    setTimeout(type, speed);
-                } else {
-                    setTimeout(deleteText, 1000);
-                }
-            }
-
-            function deleteText() {
-                if (i >= 0) {
-                    typingAnimation.textContent = phrase.substring(0, i);
-                    i--;
-                    setTimeout(deleteText, speed / 2);
-                } else {
-                    index = (index + 1) % phrases.length;
-                    setTimeout(typeAndDelete, 500);
-                }
-            }
-
-            type();
-        }
-
-        typeAndDelete();
-        
-
-        
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
